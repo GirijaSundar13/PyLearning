@@ -1,0 +1,118 @@
+{
+    "setName": "GIRIJAS_SPDR",
+    "nodes": {
+        "OWBSPDR3": {
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBXPDR",
+                "version": "3.4.1",
+                "config": "SWITCH-OTN"
+            },
+            "clli": "RDM1",
+            "node-number": 5
+        },
+        "OWBSPDR4": {
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBXPDR",
+                "version": "3.4.1",
+                "config": "SWITCH-OTN"
+            },
+            "clli": "RDM2",
+            "node-number": 6
+        },
+        "OWBRDM1": {
+            "clli": "RDM1",
+            "node-number": 7,
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBRDM",
+                "version": "3.4.1",
+                "config": ""
+            },
+            "link-info": [
+                {
+                    "src-AID": "eth-1/0/0/E-SC-E1",
+                    "dst-Node-Name": "OWBRDM2",
+                    "dst-AID": "eth-1/0/0/E-SC-E1"
+				 }
+            ]
+        },
+        "OWBRDM2": {
+            "clli": "RDM2",
+            "node-number": 8,
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBRDM",
+                "version": "3.4.1",
+                "config": ""
+            },
+            "link-info": [
+                {
+                    "src-AID": "eth-1/0/0/E-SC-E1",
+                    "dst-Node-Name": "OWBRDM1",
+                    "dst-AID": "eth-1/0/0/E-SC-E1"
+                }
+            ]
+        },
+		"OWBRDMNE1-MSA221": {
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBRDM",
+                "version": "3.4.1",
+                "config": ""
+            },
+            "clli": "OWBRDMNE1-MSA221",
+            "node-number": 1,
+            "link-info": [
+                {
+                    "src-AID": "eth-1/0/0/E-SC-E1",
+                    "dst-Node-Name": "OWBRDMNE2-MSA221",
+                    "dst-AID": "eth-1/0/0/E-SC-E1"
+                }
+            ]
+        },
+        "OWBRDMNE2-MSA221": {
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBRDM",
+                "version": "3.4.1",
+                "config": ""
+            },
+            "clli": "OWBRDMNE2-MSA221",
+            "node-number": 2,
+            "link-info": [
+                {
+                    "src-AID": "eth-1/0/0/E-SC-E1",
+                    "dst-Node-Name": "OWBRDMNE1-MSA221",
+                    "dst-AID": "eth-1/0/0/E-SC-E1"
+                }
+            ]
+        },
+        ,
+        "OWBXPDRNE3-MSA221": {
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBXPDR",
+                "version": "3.4.1",
+                "config": "SWITCH-CIENA-REALNE"
+            },
+            "clli": "OWBRDMNE1-MSA221",
+            "node-number": 3
+        },
+        "OWBXPDRNE4-MSA221": {
+            "node-info": {
+                "protocol": "NETCONF",
+                "type": "OWBXPDR",
+                "version": "3.4.1",
+                "config": "SWITCH-CIENA-REALNE"
+            },
+            "clli": "OWBRDMNE2-MSA221",
+            "node-number": 4
+        }
+
+    }
+}
+
+
+
