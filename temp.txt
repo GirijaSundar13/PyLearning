@@ -1,0 +1,15 @@
+{
+    "customer": "customerInfo",
+    "service-z-end": {
+        "rx-direction": {
+            "port": {
+                "port-device-name": "router-22",
+                "port-name": "R1",
+                "a" : null,
+                "b" : null
+            },
+            "Restorable" : true,
+            "Revertible" : false
+        }
+}
+}
