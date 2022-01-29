@@ -32,4 +32,4 @@ filename = r'temp.txt'
 with open(filename) as f:
     contents = f.read()
 validate_json(contents)
-print("abc")
+print("abcd")
