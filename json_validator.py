@@ -33,5 +33,4 @@ with open(filename) as f:
     contents = f.read()
 validate_json(contents)
 
-
-
+print("It worked")
